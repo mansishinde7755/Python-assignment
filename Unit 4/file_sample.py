@@ -1,0 +1,22 @@
+file = open("sample.txt" , "w")
+file.write("Hello world! This is the first line\n")
+file.write("Python file handling demonstration\n")
+file.close()
+print("Data written successfully ")
+
+file = open("sample.txt" , "r")
+print("Reading file contents")
+content = file.read()
+print(content)
+file.close()
+
+file = open("sample.txt" , "a")
+file.write("This is new content\n")
+file.close()
+print("Data added successfully ")
+
+file = open("sample.txt" , "r")
+print("Updated file contents")
+updated_content = file.read()
+print(updated_content)
+file.close()
